@@ -17,5 +17,6 @@ int main()
 
 		execve(argv[0], argv, NULL);
 	}
+	free(command);
 	return 0;
 }
