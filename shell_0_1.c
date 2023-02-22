@@ -7,7 +7,7 @@ int main()
 	char *command = NULL;
 	size_t len = 0;
 
-	char *argv[] = {"/bin/ls", "-l", "/usr/", NULL};
+	char *argv[] = {"/bin/ls", "/usr/", NULL};
 
 	while (1)
 	{
