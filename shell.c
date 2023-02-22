@@ -1,17 +1,26 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
-int main() 
+/**
+ * main - Prints a random number and states whether
+ *
+ *        it is positive, negative, or zero.
+ *
+ * Return: Always 0.
+ */
+
+int main(void)
 {
-	double a, b, product;
+	int n;
 	
-	printf("Enter two numbers:\n ");
-	scanf("%lf %lf", &a, &b);
-    
-	/** Calculating product */
-	product = a * b;
-	
-	/** %.2lf displays number up to 2 decimal point */
-	printf("Product = %.2lf\n", product);
-	
-	return 0;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	else
+		printf("%d is zero\n", n);
+	return (0);
 }
