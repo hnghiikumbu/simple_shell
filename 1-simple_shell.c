@@ -13,7 +13,7 @@ int main(void)
 	for (i = 0; i < 3; i++)
 	{
 		scanf("%d", &finger);
-		printf("finger cntains %d", finger);
+		printf("finger cntains %d\n", finger);
 	}
 	return 0;
 }
